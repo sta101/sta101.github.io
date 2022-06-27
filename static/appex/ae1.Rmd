@@ -69,8 +69,7 @@ survey = read_csv("https://sta101.github.io/static/appex/data/sample-survey.csv"
 
 Create a new code chunk with `CMD+SHIFT+I` (mac) or `CTRL+SHIFT+I` (windows/linux)
 
-
-So far we've already seen two functions. `library` and `read_csv`. **Functions** in R are attached to parentheses and take an input (argument) and often (but not always) return an output. To learn more about a function, you can check the documentation with `?`, e.g. `?library`.
+So far we've already seen two functions. `library` and `read_csv`. **Functions** in R are attached to parentheses and take an input, aka an **argument**, and often (but not always) return an output. To learn more about a function, you can check the documentation with `?`, e.g. `?library`.
 
 
 
@@ -88,9 +87,11 @@ To look at all of it, we can use `view()`
 view(survey)
 ```
 
+**View the roster data in the console**
+
 Why must I input net-id email?
 
-```{r join-roster eval=F}
+```{r join-roster, eval=F}
 roster %>% 
   left_join(survey, by = "email")
 ```
@@ -104,7 +105,8 @@ count(survey, bender)
 
 ```{r count-cat-dog-by-group}
 survey %>%
+  mutate(pet = ifelse(cat_dog == "dog", 1, 0)) %>%
   group_by(bender) %>%
-  count(cat-dog)
+  summarize(proportion_dog = mean(pet))
 ```
 

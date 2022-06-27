@@ -55,12 +55,12 @@ We can "print" x to the screen by typing the name of the object ("x") in the con
 
 ## Load a package
 
-```{r load-package}
+```{r load-package, warning=F, message=F}
 library(tidyverse) 
 ```
 
 ## Load data
-```{r load-data}
+```{r load-data, warning=F, message=F}
 roster = read_csv("https://sta101.github.io/static/appex/data/sample-roster.csv")
 survey = read_csv("https://sta101.github.io/static/appex/data/sample-survey.csv")
 ```
@@ -73,9 +73,9 @@ So far we've already seen two functions. `library` and `read_csv`. **Functions**
 
 
 
-**Demos**
+## Demos
 
-Let's glimpse the data.
+Let's glimpse the data frame. 
 
 ```{r glimpse-data}
 glimpse(survey)
@@ -88,6 +88,10 @@ view(survey)
 ```
 
 **View the roster data in the console**
+
+Terminology: "columns" of a dataframe are called **variables** whereas "rows" are **observations**.
+
+**Question: How many variables are in the data frame `survey`? How many observations? What about the data frame `roster`?**
 
 Why must I input net-id email?
 

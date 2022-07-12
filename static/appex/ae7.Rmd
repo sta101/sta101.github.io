@@ -81,8 +81,7 @@ box()
 
 To proceed with building our email classifier, we will, as usual, use our data (outcome $y_i$ and predictor $x_i$ pairs), to estimate $\beta$ (find $\hat{\beta}$) and obtain the model:
 $$
-\newcommand{\exponential}[1]{\text{exp}\{{#1}\}}
-p(y_i = 1) = \frac{1}{1+\exponential{- \sum  \hat{\beta}_i x_i}},
+p(y_i = 1) = \frac{1}{1+\text{exp}({- \sum  \hat{\beta}_i x_i})},
 $$
 
 ## Example

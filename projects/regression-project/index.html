@@ -13,7 +13,7 @@ View team assignments here
 The deliverable for this project (what you will turn in) is a written report. See below for more details.
 About the project For this project you will create a linear model (of your choosing) to predict newborn birth weights (or some transformation of the variable) using a sample of 3000 observations from 2020 US birth data originally sourced from the CDC.">
 
-<meta itemprop="wordCount" content="847">
+<meta itemprop="wordCount" content="1005">
 <meta itemprop="keywords" content="" /><meta property="og:title" content="STA 101 Regression Project" />
 <meta property="og:description" content="This regression project is due Tuesday July 19 at 11:59pm.
 View team assignments here
@@ -241,7 +241,25 @@ About the project For this project you will create a linear model (of your choos
 <p>For this project you will create a linear model (of your choosing) to predict newborn birth weights (or some transformation of the variable) using a sample of 3000 observations from 2020 US birth data originally sourced from <a href="https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm">the CDC</a>.</p>
 <p>Download the data using the code below.</p>
 <pre tabindex="0"><code>births = read_csv(&quot;https://sta101.github.io/static/appex/data/trainUSbirth.csv&quot;)
-</code></pre><p>Here&rsquo;s a codebook for the data set:</p>
+</code></pre><p>Here&rsquo;s a code book for the data set:</p>
+<ul>
+<li><code>newborn_birth_weight</code>: newborn birth weight in grams (response)</li>
+<li><code>month</code>: birth month (1 = January, …, 12 = December)</li>
+<li><code>mother_age</code>: age of the mother in years</li>
+<li><code>prenatal_care_starting_month</code>: month in which prenatal care began; if 0, there was no prenatal care</li>
+<li><code>daily_cigarette_prepregnancy</code>: daily number of cigarettes smoked before the pregnancy</li>
+<li><code>daily_cigarette_trimester_1</code>: daily number of cigarettes smoked during the 1st trimester of the pregnancy</li>
+<li><code>daily_cigarette_trimester_2</code>: daily number of cigarettes smoked during the 2nd trimester of the pregnancy</li>
+<li><code>daily_cigarette_trimester_3</code>: daily number of cigarettes smoked during the 3rd trimester of the pregnancy</li>
+<li><code>mother_height</code>: height of the mother in inches</li>
+<li><code>mother_bmi</code>: body mass index of the mother</li>
+<li><code>mother_weight_prepregnancy</code>: weight of the mother before the pregnancy in pounds</li>
+<li><code>mother_weight_delivery</code>: weight of the mother at delivery in pounds</li>
+<li><code>mother_diabetes_gestational</code>: whether the mother had diabetes during the pregnancy</li>
+<li><code>newborn_sex</code>: sex of the newborn</li>
+<li><code>gestation_week</code>: number of gestational weeks</li>
+<li><code>mother_risk_factors</code>: whether the mother had any risk factor (diabetes, hypertension, previous preterm birth, previous cesarean, infertility treatment used, etc)</li>
+</ul>
 <p>If you wish, you can optionally evaluate the predictive ability of your model, using 1000 observations contained in the test data set below.</p>
 <pre tabindex="0"><code>test_data = read_csv(&quot;https://sta101.github.io/static/appex/data/testUSbirth.csv&quot;)
 </code></pre><p>Here is an example of exactly how to evaluate your predictive ability in a typical linear regression model:</p>
@@ -266,7 +284,7 @@ predict_test %&gt;%
 </code></pre><p>See <a href="">ae7</a> for an example of how to do this in a logistic regression setting.</p>
 <h2 id="written-report">Written report<a href="#written-report" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Your report must be written using R Markdown. Your written report should not exceed five pages inclusive of all tables and figures. Use the code below to download a template file for the project.</p>
-<pre tabindex="0"><code>download.file(&quot;https://sta101.github.io/static/projects/regressionProject.Rmd&quot;,
+<pre tabindex="0"><code>download.file(&quot;https://sta101.github.io/static/projects/regression_project_template.Rmd&quot;,
 destfile = &quot;regressionProject.rmd&quot;)
 </code></pre><p>To begin, add YAML to the top and specify a project name, a team name (optional) and the names of each group member. You can use the YAML posted below as a template.</p>
 <pre tabindex="0"><code>---
@@ -275,7 +293,7 @@ author: &quot;The Last Rbenders: Aang, Katara, Sokka, Momo&quot;
 ---
 </code></pre><p>All team members must contribute to the report. Before you finalize your report, make sure the printing of code chunks is turned off by including the following code chunk at the top of your RMD:</p>
 <pre><code>```{r setup, include=FALSE}
-    knitr::opts_chunk$set(echo = TRUE)
+    knitr::opts_chunk$set(echo = FALSE)
 ```
 </code></pre>
 <p>Next, load any relevant libraries and the data.</p>

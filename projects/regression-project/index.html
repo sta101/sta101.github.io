@@ -281,7 +281,7 @@ predict_test %&gt;%
   mutate(squared_error = (newborn_birth_weight - myPrediction)^2) %&gt;%
   summarize(sse = sum(squared_error))
 
-</code></pre><p>See <a href="https://sta101.github.io/static/appex/ae7.html">ae7</a> for an example of how to do this in a logistic regression setting.</p>
+</code></pre><p>See <a href="">ae7</a> for an example of how to do this in a logistic regression setting.</p>
 <h2 id="written-report">Written report<a href="#written-report" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>Your report must be written using R Markdown. Your written report should not exceed five pages inclusive of all tables and figures. Use the code below to download a template file for the project.</p>
 <pre tabindex="0"><code>download.file(&quot;https://sta101.github.io/static/projects/regression_project_template.Rmd&quot;,

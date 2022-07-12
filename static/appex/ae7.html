@@ -496,8 +496,7 @@ takes in a number of predictors and outputs the probability of a
 “success” (an outcome of 1) in a binary outcome variable. The
 probability is related to the predictors via a <strong>sigmoid link
 function</strong>, <span class="math display">\[
-\newcommand{\exponential}[1]{\text{exp}\{{#1}\}}
-p(y_i = 1) = \frac{1}{1+\exponential{- \sum \beta_i x_i }},
+p(y_i = 1) = \frac{1}{1+\text{exp}({- \sum \beta_i x_i })},
 \]</span> whose output is in <span class="math inline">\((0,1)\)</span>
 (a probability). In this modeling scheme, one typically finds <span class="math inline">\(\hat{\beta}\)</span> by maximizing the
 <strong>likelihood function</strong>, (another objective function,

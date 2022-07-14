@@ -202,7 +202,7 @@ set.seed(1)
 numberOfPeople = 10 
 numberOfSurveys = 1
 probOfSuccess = 17 / 20
-rbinom(n = numberOfPeople, size = numberOfSurveys, prob = probOfSuccess)
+rbinom(n = numberOfSurveys, size = numberOfPeople, prob = probOfSuccess)
 ```
 
 

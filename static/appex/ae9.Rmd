@@ -1,5 +1,5 @@
 ---
-title: "Probability and the bootstrap"
+title: "Bootstrap sampling and confidence intervals"
 output: html_document
 date: 'July 18, 2022'
 ---

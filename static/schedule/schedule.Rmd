@@ -63,7 +63,7 @@ Find all assignments and due dates here. This schedule updates frequently.
 |     |Tue Jul 12 | Logistic regression         | [`r emo::ji("book")`](/prepare/week-3)   | [ae7](/static/appex/ae7.html)  |  Regression project: workday         |      |  [Regression project](/projects/regression-project)      |
 |     |Thu Jul 14 | Random variables + distributions      | [`r emo::ji("book")`](/prepare/week-3) | [ae8](/static/appex/ae8.html) | [lab 4](/static/labs/lab04.html)              |     |        |
 |  4   |Mon Jul 18 | Sampling and the bootstrap        | [`r emo::ji("book")`](/prepare/week-4)       | [ae9](/static/appex/ae9.html)  |           |     |        |
-|     |Tue Jul 19 | Central limit theorem (CLT)    | [`r emo::ji("book")`](/prepare/week-4)       |  | Lab cancelled: work on project              |     |        |
+|     |Tue Jul 19 | Central limit theorem (CLT)    | [`r emo::ji("book")`](/prepare/week-4)       | [ae10](/static/appex/ae10.html) | Lab cancelled: work on project              |     |        |
 |     |Thu Jul 21 | Hypothesis testing I        |  [`r emo::ji("book")`](/prepare/week-4)      | | No lab: exam released             |  [exam 2]()   |        |
 |  5   |Mon Jul 25 | Hypothesis testing II        |        |   |           |  exam 2 due    |     |
 |     |Tue Jul 26 | Hypothesis testing III      |        | | [lab 5]()              |     |        |

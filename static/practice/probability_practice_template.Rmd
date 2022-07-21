@@ -8,6 +8,7 @@ output: html_document
 ```{r load-library, message = F, warning = F}
 library(tidyverse)
 library(openintro)
+library(tidymodels)
 ```
 
 ```{r load-data, message = F, warning = F}

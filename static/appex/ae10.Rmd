@@ -35,7 +35,6 @@ destfile = "ae10.rmd")
 ```{r load-libraries, message = F, warning = F}
 library(tidyverse)
 library(tidymodels)
-library(openintro)
 ```
 
 

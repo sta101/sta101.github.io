@@ -8,7 +8,7 @@ css: "../labs/labs.css"
 ---
 
 
-# Find your exam 1 instructions on sakai:
+# Find your exam 2 instructions on sakai:
 
 `resources` > `exams` > `exam02.pdf`
 

@@ -368,6 +368,7 @@ pre code {
 <h2>Bulletin</h2>
 <ul>
 <li>Exam 2 due tonight at 11:59pm</li>
+<li><a href="/projects/finalProject">Final project</a></li>
 </ul>
 </div>
 <div id="today" class="section level2">
@@ -427,10 +428,7 @@ reject the null.</p>
 </div>
 <div id="the-tidy-way" class="section level3">
 <h3>The tidy way</h3>
-<pre class="r"><code># coin flip data
-# coin_flips = data.frame(one_flip = c(rep(&quot;H&quot;, 20), rep(&quot;T&quot;, 10)))
-# coin_flips$one_flip = sample(coin_flips$one_flip, size = 30, replace = FALSE)
-coin_flips = read_csv(&quot;~/Desktop/coin_flips.csv&quot;)</code></pre>
+<pre class="r"><code>coin_flips = read_csv(&quot;https://sta101.github.io/static/appex/data/coin_flips.csv&quot;)</code></pre>
 <pre><code>## Rows: 30 Columns: 1
 ## ── Column specification ────────────────────────────────────────────────────────
 ## Delimiter: &quot;,&quot;
@@ -457,7 +455,7 @@ get_p_value(obs_stat, direction = &quot;right&quot;)</code></pre>
 ##   p_value
 ##     &lt;dbl&gt;
 ## 1  0.0001</code></pre>
-<p>p-value of <span class="math inline">\(2 \times 10^{-4}\)</span> &lt;
+<p>p-value of <span class="math inline">\(1 \times 10^{-4}\)</span> &lt;
 0.05. We reject the null that the coin is fair.</p>
 </div>
 <div id="not-just-a-coin-flip" class="section level3">

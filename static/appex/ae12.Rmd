@@ -9,6 +9,7 @@ date: "July 25, 2022"
 
 - Exam 2 due tonight at 11:59pm
 - [Final project](/projects/finalProject)
+
 ## Today
 
 By the end of today you will...
@@ -89,7 +90,7 @@ null_dist %>%
 get_p_value(obs_stat, direction = "right")
 ```
 
-p-value of $2 \times 10^{-4}$ < 0.05. We reject the null that the coin is fair.
+p-value of $1 \times 10^{-4}$ < 0.05. We reject the null that the coin is fair.
 
 ### Not just a coin flip
 

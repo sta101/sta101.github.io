@@ -543,8 +543,8 @@ necessarily flip a coin. The answer, is once again, bootstrap
 sampling.</li>
 </ul>
 <p><strong>Hypothesis</strong>: “The mean age of push-up/pull-up
-training partcipants is greater than 30”.</p>
-<p>Let’s investigate this hypothesis with a signifiance level <span class="math inline">\(\alpha = 0.01\)</span>.</p>
+training participants is greater than 30”.</p>
+<p>Let’s investigate this hypothesis with a significance level <span class="math inline">\(\alpha = 0.01\)</span>.</p>
 <div id="exercise-5" class="section level4">
 <h4>Exercise 5</h4>
 <p>Write down the null and alternative hypotheses in words and
@@ -644,7 +644,7 @@ context.</p>
 <h3>Hypothesis testing procedure</h3>
 <ol style="list-style-type: decimal">
 <li>Specify the null and alternative hypothesis. Choose or know <span class="math inline">\(\alpha\)</span>.</li>
-<li>Look at the data, compute the observed statistic.</li>
+<li>Collect/examine the data. Compute the observed statistic.</li>
 <li>Simulate <strong>under the null</strong> and compute the p-value
 using the <strong>observed statistic</strong> and the
 <strong>alternative hypothesis</strong>.</li>
@@ -701,6 +701,42 @@ visualize(null_dist) +
 <div id="exercise-10" class="section level4">
 <h4>Exercise 10</h4>
 <p>Compute the p-value and state your conclusion with <span class="math inline">\(\alpha = 0.05\)</span></p>
+</div>
+</div>
+<div id="summary-of-generate-options" class="section level2">
+<h2>Summary of <code>generate()</code> options</h2>
+<div id="draw" class="section level4">
+<h4>1. <code>draw</code></h4>
+<ul>
+<li>description: flip a coin with probability p, or roll a die with
+probabilities associated with each side. <a href="https://cran.r-project.org/web/packages/infer/vignettes/observed_stat_examples.html#one-categorical-2-level---gof">See
+here</a> for reference to the multinomial setting.</li>
+<li>typical case: test the proportion of a binary outcome</li>
+<li>null: proportion <span class="math inline">\(p\)</span> is some
+fixed number</li>
+<li>Example (hypothesis test for a single proportion):</li>
+</ul>
+</div>
+<div id="bootstrap" class="section level4">
+<h4>2. <code>bootstrap</code></h4>
+<ul>
+<li>description: re-sample your data with replacement</li>
+<li>typical case (in hypothesis testing): does the mean equal a specific
+value? Does the median equal a specific value?</li>
+<li>null: what would the data have looked like if nothing but the point
+estimate changed?</li>
+</ul>
+</div>
+<div id="permute" class="section level4">
+<h4>3. <code>permute</code></h4>
+<ul>
+<li>description: permutes variables</li>
+<li>typical case: is there a difference in the outcome between
+groups?</li>
+<li>associated null: group membership does not matter i.e. group A and
+group B have the same outcome</li>
+<li>Example (test for independence):</li>
+</ul>
 </div>
 </div>
 

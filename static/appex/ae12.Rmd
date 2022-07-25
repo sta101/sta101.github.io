@@ -161,9 +161,9 @@ Next, simulate under the null and compute the p-value. State your conclusion wit
 
 - What if we want to make a claim about a different population parameter than a proportion? Maybe a mean, or median? We can't necessarily flip a coin. The answer, is once again, bootstrap sampling.
 
-**Hypothesis**: "The mean age of push-up/pull-up training partcipants is greater than 30".
+**Hypothesis**: "The mean age of push-up/pull-up training participants is greater than 30".
 
-Let's investigate this hypothesis with a signifiance level $\alpha = 0.01$.
+Let's investigate this hypothesis with a significance level $\alpha = 0.01$.
 
 #### Exercise 5
 
@@ -238,7 +238,7 @@ Write down the observed statistic. Simulate under the null and compute the p-val
 ### Hypothesis testing procedure
 
 1. Specify the null and alternative hypothesis. Choose or know $\alpha$.
-2. Look at the data, compute the observed statistic.
+2. Collect/examine the data. Compute the observed statistic.
 3. Simulate **under the null** and compute the p-value using the **observed statistic** and the **alternative hypothesis**.
 4. Compare the p-value to your significance level $\alpha$ and reject or fail to reject the null. Interpret your result in context.
 
@@ -299,3 +299,27 @@ visualize(null_dist) +
 #### Exercise 10
 
 Compute the p-value and state your conclusion with $\alpha = 0.05$
+
+## Summary of `generate()` options
+
+#### 1. `draw`
+
+- description: flip a coin with probability p, or roll a die with probabilities associated with each side. [See here](https://cran.r-project.org/web/packages/infer/vignettes/observed_stat_examples.html#one-categorical-2-level---gof) for reference to the multinomial setting.
+- typical case: test the proportion of a binary outcome
+- null: proportion $p$ is some fixed number
+- Example (hypothesis test for a single proportion):
+
+#### 2. `bootstrap`
+
+- description: re-sample your data with replacement
+- typical case (in hypothesis testing): does the mean equal a specific value? Does the median equal a specific value?
+- null: what would the data have looked like if nothing but the point estimate changed?
+
+#### 3. `permute`
+
+- description: permutes variables
+- typical case: is there a difference in the outcome between groups?
+- associated null: group membership does not matter i.e. group A and group B have the same outcome
+- Example (test for independence):
+
+

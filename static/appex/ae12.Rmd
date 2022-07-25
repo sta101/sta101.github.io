@@ -42,7 +42,7 @@ library(tidymodels)
 Last time we asked if a coin was fair. We let $p$ be the probability of landing heads. Fundamentally, we were interested in whether or not $p = 0.5$. This was our **null hypothesis**:
 
 $$
-H_0: p = 5
+H_0: p = .5
 $$
 
 and our alternative, was that the coin was biased heads:
@@ -249,7 +249,7 @@ Two exercise regimes:
 - "density" training
 - "grease-the-groove" (gtg)
 
-We want to know, is the average pull-up percent increase of a gtg trainee significantly greater than a density trainee?
+We want to know, is the average pull-up percent increase of a gtg trainee significantly different than a density trainee?
 
 Fundamentally, does the categorical variable `training` affect the average percentage increase in pull-ups?
 
@@ -277,8 +277,14 @@ push_pull %>%
 
 #### Exercise 9:
 
-- Complete the hypothesis specification above by stating the alternative.
+- Complete the hypothesis specification above by stating the alternative. Check the observed statistic reported below.
 
+```{r}
+# code here
+```
+
+
+Simulating under the null and computing the p-value:
 
 ```{r}
 sim_num = 10000
@@ -288,12 +294,12 @@ null_dist = push_pull %>%
   specify(response = pct_pull_inc, explanatory = training) %>%
   hypothesize(null = "independence") %>%
   generate(reps = sim_num, type = "permute") %>%
-  calculate(stat = "diff in means", order = c("gtg", "density"))
+  calculate(stat = "diff in means", order = c("density", "gtg"))
 # observed statistic
-obs_stat = .489 - .196
+obs_stat = .196 - .489
 # visualize / get p
 visualize(null_dist) +
-  shade_p_value(obs_stat, direction = "right")
+  shade_p_value(obs_stat, direction = "both")
 ```
 
 #### Exercise 10

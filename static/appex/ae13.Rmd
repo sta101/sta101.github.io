@@ -35,7 +35,7 @@ library(openintro)
 
 ### Load data
 
-The `stent30` data set comes from the `openintro` package and is from a study conducted in 2011 on the affects of arterial stents as a therapy for stroke patients. See the original publication:
+The `stent30` data set comes from the `openintro` package and is from a study conducted in 2011 on the effects of arterial stents as a therapy for stroke patients. See the original publication:
 
 Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New England Journal of Medicine 365:993- 1003. doi: 10.1056/NEJMoa1105335.
 
@@ -74,7 +74,7 @@ glimpse(courage)
 
 Do National Women's Soccer League (NWSL) teams have a home-field advantage? We'll answer this question in a few separate ways.
 
-Hypothesis testing framework: does NC Courage score a significantly different number of points away than at home?
+Hypothesis testing framework: does NC Courage score a significantly different number of points (on average) away than at home?
 
 #### Exercise 2 
 
@@ -88,7 +88,7 @@ Hypothesis testing framework: does NC Courage score a significantly different nu
 
 #### Exercise 3
 
-To answer the question *does NC Courage score a significantly different number of points away than at home?*
+To answer the question *does NC Courage score a significantly different number of points (on average) away than at home?*
 
 - Write the null and alternative hypothesis. Report the observed statistic.
 
@@ -110,12 +110,8 @@ To answer the question *does NC Courage score a significantly different number o
 # code here
 ```
 
+
 #### Exercise 5
-
-Using your hypothesis test form exercise 2, report the p-value associated with the lower-bound of your confidence interval as the observed statistic. What do you notice?
-
-
-#### Exercise 6 
 
 Is there a better way we could investigate whether or not the Courage have a home-field advantage? Why?
 
@@ -153,7 +149,7 @@ The data examines 901 individuals with diabetes and includes the following varia
 - `survival`: whether or not the individual survived the length of the study
 
 ```{r load-diabetes, warning = F, message = F}
-diabetes = courage = read_csv("https://sta101.github.io/static/appex/data/diabetes.csv")
+diabetes = read_csv("https://sta101.github.io/static/appex/data/diabetes.csv")
 ```
 
 Flex Aisher thinks people with insulin dependent diabetes actually survive longer than those without insulin dependence. Flex wants to formally test his hypothesis.
@@ -167,7 +163,7 @@ $$
 
 At first glance the data seem to back up his claim...
 
-#### Exercise 7
+#### Exercise 6
 
 Compute the probability of survival and death for diabetic individuals with and without insulin dependence.
 
@@ -175,7 +171,7 @@ Compute the probability of survival and death for diabetic individuals with and 
 #  code here
 ```
 
-#### Exercise 8
+#### Exercise 7
 
 Is Flex's claim significant at the $\alpha = 0.05$ level? Perform a hypothesis test and report your results.
 
@@ -183,7 +179,7 @@ Is Flex's claim significant at the $\alpha = 0.05$ level? Perform a hypothesis t
 # code here
 ```
 
-#### Exercise 9
+#### Exercise 8
 
 Is the aggregate data misleading? Use the code chunk below to investigate further.
 

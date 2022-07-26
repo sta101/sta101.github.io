@@ -399,7 +399,7 @@ library(openintro)</code></pre>
 <h3>Load data</h3>
 <p>The <code>stent30</code> data set comes from the
 <code>openintro</code> package and is from a study conducted in 2011 on
-the affects of arterial stents as a therapy for stroke patients. See the
+the effects of arterial stents as a therapy for stroke patients. See the
 original publication:</p>
 <p>Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
 Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New
@@ -447,7 +447,7 @@ games (2017-2019).</p>
 <p>Do National Women’s Soccer League (NWSL) teams have a home-field
 advantage? We’ll answer this question in a few separate ways.</p>
 <p>Hypothesis testing framework: does NC Courage score a significantly
-different number of points away than at home?</p>
+different number of points (on average) away than at home?</p>
 <div id="exercise-2" class="section level4">
 <h4>Exercise 2</h4>
 <ul>
@@ -463,7 +463,7 @@ points scored in a game.</li>
 <div id="exercise-3" class="section level4">
 <h4>Exercise 3</h4>
 <p>To answer the question <em>does NC Courage score a significantly
-different number of points away than at home?</em></p>
+different number of points (on average) away than at home?</em></p>
 <ul>
 <li><p>Write the null and alternative hypothesis. Report the observed
 statistic.</p></li>
@@ -485,12 +485,6 @@ appropriate context</p></li>
 </div>
 <div id="exercise-5" class="section level4">
 <h4>Exercise 5</h4>
-<p>Using your hypothesis test form exercise 2, report the p-value
-associated with the lower-bound of your confidence interval as the
-observed statistic. What do you notice?</p>
-</div>
-<div id="exercise-6" class="section level4">
-<h4>Exercise 6</h4>
 <p>Is there a better way we could investigate whether or not the Courage
 have a home-field advantage? Why?</p>
 </div>
@@ -558,7 +552,7 @@ years old</li>
 <li><code>survival</code>: whether or not the individual survived the
 length of the study</li>
 </ul>
-<pre class="r"><code>diabetes = courage = read_csv(&quot;https://sta101.github.io/static/appex/data/diabetes.csv&quot;)</code></pre>
+<pre class="r"><code>diabetes = read_csv(&quot;https://sta101.github.io/static/appex/data/diabetes.csv&quot;)</code></pre>
 <p>Flex Aisher thinks people with insulin dependent diabetes actually
 survive longer than those without insulin dependence. Flex wants to
 formally test his hypothesis.</p>
@@ -571,21 +565,21 @@ H_A: p_{d} - p_{i} &gt; 0
 \]</span></p>
 <p>At first glance the data seem to back up his claim…</p>
 </div>
-<div id="exercise-7" class="section level4">
-<h4>Exercise 7</h4>
+<div id="exercise-6" class="section level4">
+<h4>Exercise 6</h4>
 <p>Compute the probability of survival and death for diabetic
 individuals with and without insulin dependence.</p>
 <pre class="r"><code>#  code here</code></pre>
 </div>
-<div id="exercise-8" class="section level4">
-<h4>Exercise 8</h4>
+<div id="exercise-7" class="section level4">
+<h4>Exercise 7</h4>
 <p>Is Flex’s claim significant at the <span class="math inline">\(\alpha
 = 0.05\)</span> level? Perform a hypothesis test and report your
 results.</p>
 <pre class="r"><code># code here</code></pre>
 </div>
-<div id="exercise-9" class="section level4">
-<h4>Exercise 9</h4>
+<div id="exercise-8" class="section level4">
+<h4>Exercise 8</h4>
 <p>Is the aggregate data misleading? Use the code chunk below to
 investigate further.</p>
 <pre class="r"><code># code here</code></pre>

@@ -6,7 +6,7 @@ date: "July 26, 2022"
 
 ## Bulletin
 
-- [Final project](/projects/finalProject) proposal due Friday
+- [Final project](/projects/final-project) proposal due Friday
 
 ## Today
 

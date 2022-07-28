@@ -465,7 +465,7 @@ framework of hypothesis testing:</p>
 <p><span class="math inline">\(H_A:\)</span> <span class="math inline">\(\beta_{\text{holiday}} \neq 0\)</span></p>
 <p>For OLS regression, our test statistic is</p>
 <p><span class="math display">\[
-T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 3}
+T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 4}
 \]</span> We want to see if our observed statistic, <span class="math inline">\(T\)</span>, falls far in the tail under the
 null.</p>
 <p><code>R</code> takes care of much of this behind the scenes with the
@@ -475,7 +475,7 @@ tidy output and reports a p-value for each <span class="math inline">\(\beta\)</
 <h4>Exercise 3</h4>
 <p>Calculate the p-value associated with <span class="math inline">\(\beta_{holiday}\)</span> manually using the
 equation above. Note: in a regression setting, the degrees of freedom is
-the number of observations minus the number of predictors.</p>
+the number of observations minus the number of <span class="math inline">\(\beta\)</span>s.</p>
 <p>Compare the p-value to one reported in the tidy output.</p>
 <pre class="r"><code># code here</code></pre>
 <ul>

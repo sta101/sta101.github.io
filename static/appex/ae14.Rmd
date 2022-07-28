@@ -104,7 +104,7 @@ $H_A:$ $\beta_{\text{holiday}} \neq 0$
 For OLS regression, our test statistic is 
 
 $$
-T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 3}
+T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 4}
 $$
 We want to see if our observed statistic, $T$, falls far in the tail under the null.
 
@@ -112,7 +112,7 @@ We want to see if our observed statistic, $T$, falls far in the tail under the n
 
 #### Exercise 3
 
-Calculate the p-value associated with $\beta_{holiday}$ manually using the equation above. Note: in a regression setting, the degrees of freedom is the number of observations minus the number of predictors.
+Calculate the p-value associated with $\beta_{holiday}$ manually using the equation above. Note: in a regression setting, the degrees of freedom is the number of observations minus the number of $\beta$s.
 
 Compare the p-value to one reported in the tidy output.
 

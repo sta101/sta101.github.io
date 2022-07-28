@@ -461,11 +461,11 @@ what’s the null and alternative?</p>
 <p>The main idea is that if a predictor (e.g. holiday) does not help us
 explain bike rental numbers then its associated <span class="math inline">\(\beta\)</span> might as well be 0. Within the
 framework of hypothesis testing:</p>
-<p><span class="math inline">\(H_0\)</span>: <span class="math inline">\(\beta_{\text{temp}} = 0\)</span></p>
-<p><span class="math inline">\(H_A:\)</span> <span class="math inline">\(\beta_{\text{temp}} \neq 0\)</span></p>
+<p><span class="math inline">\(H_0\)</span>: <span class="math inline">\(\beta_{\text{holiday}} = 0\)</span></p>
+<p><span class="math inline">\(H_A:\)</span> <span class="math inline">\(\beta_{\text{holiday}} \neq 0\)</span></p>
 <p>For OLS regression, our test statistic is</p>
 <p><span class="math display">\[
-T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 2}
+T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 3}
 \]</span> We want to see if our observed statistic, <span class="math inline">\(T\)</span>, falls far in the tail under the
 null.</p>
 <p><code>R</code> takes care of much of this behind the scenes with the

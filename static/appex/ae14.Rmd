@@ -97,14 +97,14 @@ The p-value output is associated with a typical hypothesis test... but what's th
 
 The main idea is that if a predictor (e.g. holiday) does not help us explain bike rental numbers then its associated $\beta$ might as well be 0. Within the framework of hypothesis testing:
 
-$H_0$: $\beta_{\text{temp}} = 0$
+$H_0$: $\beta_{\text{holiday}} = 0$
 
-$H_A:$ $\beta_{\text{temp}} \neq 0$
+$H_A:$ $\beta_{\text{holiday}} \neq 0$
 
 For OLS regression, our test statistic is 
 
 $$
-T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 2}
+T = \frac{\hat{\beta} - 0}{\text{SE}_{\hat{\beta}}} \sim t_{n - 3}
 $$
 We want to see if our observed statistic, $T$, falls far in the tail under the null.
 

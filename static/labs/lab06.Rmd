@@ -9,7 +9,7 @@ css: labs.css
 
 By the end of this lab you will
 
-- make inference in a regression framework
+- compare hypothesis tests and confidence intervals
 - explore a new package of your choice
 
 ## Getting started

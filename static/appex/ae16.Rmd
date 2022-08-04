@@ -88,7 +88,7 @@ A data analyst received permission to post a data set that was scraped from a so
 - "Simpson's paradox", where conclusions drawn from analyzing subgroups differ from conclusions drawn when the groups are combined. Can you demonstrate Simpson's Paradox with the data below? ^[Source:  https://www.randomservices.org/random/data/Berkeley.html]
 
 ```{r s-p, warning = F}
-berk = read_csv("data/BerkeleyAdmissionsData.csv")
+berk = read_csv("https://sta101.github.io/static/appex/data/BerkeleyAdmissionsData.csv")
 berk
 
 ```

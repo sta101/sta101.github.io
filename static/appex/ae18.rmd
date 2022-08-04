@@ -11,7 +11,7 @@ output:
 
 Download this application exercise by pasting the code below into your console
 
-    download.file("https://sta101.github.io/static/appex/ae18.Rmd",
+    download.file("https://sta101.github.io/static/appex/ae18.rmd",
     destfile = "ae18.rmd")
 
 ## Load packages
@@ -44,10 +44,10 @@ This application exercise builds on the `R` code found [here](https://www.r-blog
 Let's load the data
 
 ```{r load-data}
-warandpeace = readLines("data/warandpeace.txt")
-frequency = read.table("data/frequencies.txt")
+warandpeace = readLines("https://sta101.github.io/static/appex/data/warandpeace.txt")
+frequency = read.table("https://sta101.github.io/static/appex/data/frequencies.txt")
 colnames(frequency) = c(toupper(letters), "") # edit column names
-secret_message = readLines("data/secret-message.txt")
+secret_message = readLines("https://sta101.github.io/static/appex/data/secret-message.txt")
 ```
 
 ![](https://sta101.github.io/static/img/war-and-peace.jpg){width=25%}
